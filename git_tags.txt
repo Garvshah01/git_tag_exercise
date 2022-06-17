@@ -1,0 +1,38 @@
+1) git init 
+	git remote add origin https://github.com/Garvshah01/git_tag_exercise
+	git push origin master
+
+2) 	nano file1.txt
+	nano file2.txt
+	git add .
+	git commit -m "file added"
+	git tag "v1.0.0" -m ""
+
+3)	nano file1.txt
+	git add .
+	git commit -m "update file"
+	git tag "v1.0.1" -m "modify from v1.0.0"
+
+4) nano file3.txt
+	git add .
+	git commit -m "add for v1.0.1"
+	git tag "v1.1.0" -m "from v1.0.1"
+
+5) git checkout v1.0.1
+	nano file1.txt
+	git add .
+	git commit -m "update in file1"
+	git tag "v1.0.2" -m "from v1.0.1"
+
+6) git checkout master
+	nano file4.txt
+	git add .
+	git commit -m "another version 1.1.1"
+	git tag "v1.1.1" -m "from 1.1.0"
+
+git checkout master
+git push origin master
+git push --tags
+	
+
+ 
